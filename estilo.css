@@ -1,0 +1,120 @@
+/*
+****** FORMATAÇÕES GENÉRICAS ******
+*/
+body {
+        margin: 0;
+    }
+
+.conteudo {
+            display: grid;
+    }
+
+/*
+****** HEADER ******
+*/
+header {
+        grid-column-start: 1;
+        grid-column-end: 12;
+        background-color: #504945;
+}
+
+.menu {
+        grid-column-start: 6;
+        grid-column-end: 12;
+        justify-content: center;/*centraliza o menu*/
+        gap: 20px;
+        }
+
+
+.foto3x4 {
+            grid-column-start: 1;
+            grid-column-end: 1;
+            width: 112px;
+            height: 150px;
+            border: 2px solid black;
+            text-align: center;
+}
+
+ul {
+        list-style-type: none;
+        color: #222121;
+}
+
+li {
+    float: left;
+}
+
+/*
+****** PRINCIPAL ******
+*/
+.principal {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+}
+
+.card {
+            display: flex;
+            flex-flow: row wrap;
+}
+
+.text {
+            border: 1px solid #ccc;
+            border-radius: 1rem;
+            padding: 0.8rem;
+            margin-bottom: 0.8rem;
+        }
+
+
+
+/*
+****** FOOTER ******
+*/
+footer {
+        grid-column-start: 1;
+        grid-column-end: 12;
+        background-color: #222121;
+        color: white;
+        text-align: center;
+}
+
+/*
+****** FORMATAÇÃO LINKS ******
+*/
+a, a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid #222121 1px;
+}
+
+a:hover {
+        background-color: #504945;
+        color: white;
+}
+
+/* media query para dispositivos móveis */
+@media only screen and (max-width: 767px) 
+{
+.wrapper {
+            grid-column-start: 1;
+            grid-column-end: 1;
+}
+
+.foto3x4 {
+        
+            grid-column-start: 1;
+            grid-column-end: 1;
+}
+
+.principal {
+            grid-column-start: 1;
+            grid-column-end: 1;
+}
+
+.menu {
+            grid-column-start: 1;
+            grid-column-end: 1;
+}
+}
